@@ -1134,9 +1134,4 @@ if __name__ == "__main__":
     if 'google.colab' in sys.modules:
         sys.argv = ['causal_impact.py', '--data', '/content/causal_campaign_sim_3000.csv', '--plots'] # Added plots flag
         print("Running in Colab, simulating command-line arguments:", sys.argv)
-    # In causal_impact.py, find the main() function and add this call
-
-    # ... (after the write_json_summary call) ...
-
-    # ... (rest of the FINAL OUTPUT print statements) ...
     main()
