@@ -1,119 +1,197 @@
+<div align="center">
 
+# 📊 CampaignIQ
 
-# CampaignIQ 📈
+### *Causal Analytics for Public Health Impact*
 
-### [Visit our deployed full-stack prototype on IBM LinuxONE Community Cloud Here💖 - http://148.100.109.34/](http://148.100.109.34/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-148.100.109.34-blue?style=for-the-badge)](http://148.100.109.34/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-Latest-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-CampaignIQ is a robust analytical solution designed to move beyond simple correlations and measure the true causal impact of public health campaigns. It uses a state-of-the-art causal inference pipeline to provide health organizations with a precise, unbiased measure of campaign ROI and actionable insights for strategic resource allocation.
+### [🌐 Visit Full-Stack Prototype - http://148.100.109.34/](http://148.100.109.34/) • Deployed on IBM LinuxONE Community Cloud
 
-![Project Output Screenshot](./v1/images/output_1.jpg)
+---
 
-![Project Output Screenshot](./v1/images/output_3.jpg)
+### *Move beyond correlation. Measure true causal impact.*
 
-![Project Output Screenshot](./v1/images/output_4.jpg)
+CampaignIQ is a state-of-the-art analytical solution that leverages causal inference to provide health organizations with precise, unbiased measures of campaign ROI and actionable insights for strategic resource allocation.
 
-![Project Output Screenshot](./v1/images/output_2.jpg)
+</div>
 
------
+---
 
-## The Problem
+## 📸 Platform Overview
 
-A health organization needs to rigorously evaluate the effectiveness of its health awareness campaign. Standard performance metrics, such as comparing booking rates between targeted and non-targeted groups, are unreliable as they fail to distinguish correlation from causation. These simple comparisons are often contaminated by confounding variables like a patient's district, age, or pre-existing conditions, leading to a biased and misleading assessment of the campaign's true impact.
+<div align="center">
 
-Consequently, decision-makers cannot confidently determine the campaign's return on investment or strategically allocate resources for future initiatives. They require a robust analytical solution that can isolate the true causal effect of the campaign on booking rates and identify the most responsive demographic segments.
+| Campaign Analytics Dashboard | Causal Impact Visualization |
+|:---:|:---:|
+| ![Output 1](./v1/images/output_1.jpg) | ![Output 3](./v1/images/output_3.jpg) |
 
------
+| Segment Analysis | ROI Metrics |
+|:---:|:---:|
+| ![Output 4](./v1/images/output_4.jpg) | ![Output 2](./v1/images/output_2.jpg) |
 
-## The Solution
+</div>
 
-The proposed solution is a causal inference pipeline designed to accurately measure the true impact of the public health campaign while correcting for confounding variables. It utilizes a state-of-the-art **AIPW (Augmented Inverse Propensity Weighting)** estimator, a doubly-robust method that provides a reliable estimate even if one of its underlying models is misspecified.
+---
 
-To ensure statistical rigor and prevent bias, the pipeline employs **k-fold cross-fitting** when training its machine learning components. Beyond calculating the overall **Average Treatment Effect (ATE)**, the solution drills down to identify the most responsive patient subgroups by computing **Conditional Average Treatment Effects (CATEs)**.
+## 🎯 The Challenge
 
-The final output is a comprehensive analysis that includes a precise, unbiased measure of campaign ROI, critical diagnostic plots to validate assumptions, and an actionable list of high-performing segments.
+<table>
+<tr>
+<td width="50%">
 
------
+### ❌ **The Problem**
 
-## Target Audience
+Health organizations struggle to evaluate campaign effectiveness accurately:
 
-1.  **Program Managers & Strategists:** The decision-makers who use the ROI and segment recommendations to justify budgets and optimize future campaigns for maximum impact.
-2.  **Data Scientists & Analysts:** The technical experts who build, validate, and maintain the analytical engine, ensuring the results are statistically sound by scrutinizing its methodology and diagnostics.
-3.  **Health Officials & Funders:** The stakeholders who require clear, defensible impact summaries to ensure accountability and make informed decisions on future investments and public health policy.
+- **Correlation ≠ Causation**: Simple comparisons mislead
+- **Confounding Variables**: District, age, conditions skew results
+- **Biased Assessments**: Unable to isolate true campaign impact
+- **Resource Waste**: No data-driven allocation strategy
 
------
+</td>
+<td width="50%">
 
-## Getting Started
+### ✅ **The Solution**
 
-To get a local copy up and running, follow these simple steps.
+Advanced causal inference pipeline that delivers:
 
-### Prerequisites
+- **AIPW Estimator**: Doubly-robust causal measurement
+- **K-Fold Cross-Fitting**: Statistical rigor & bias prevention
+- **ATE & CATE Analysis**: Overall and segment-specific impact
+- **Actionable Insights**: Data-driven resource optimization
 
-  * Node.js and npm
-  * Python 3.x and pip
+</td>
+</tr>
+</table>
 
-### **Configuration: Add Hugging Face Token** 🔑
+---
 
-This project requires a Hugging Face token to download the necessary machine learning models from the Hub. You can provide it in one of two ways:
+## 🔬 Technical Architecture
 
-#### **Method 1: Using an Environment File (Recommended)**
+```mermaid
+graph LR
+    A[📊 Campaign Data] --> B[🧹 Preprocessing]
+    B --> C[🎯 AIPW Estimator]
+    C --> D[📈 K-Fold Cross-Fitting]
+    D --> E[🔍 ATE Calculation]
+    D --> F[🎪 CATE Analysis]
+    E --> G[📋 ROI Report]
+    F --> H[🎯 Segment Insights]
+    G --> I[🤖 Mistral-7B]
+    H --> I
+    I --> J[💡 Strategic Decisions]
+```
 
-This is the most secure method and prevents your secret token from being accidentally committed to version control.
+### **Core Methodology**
 
-1.  Create a new file named `.env` in the root directory of the project (`v1/.env`).
-2.  Add the following line to the file, replacing the placeholder with your actual token:
-    ```
-    HF_TOKEN="your_hugging_face_token_here"
-    ```
-3.  Ensure `.env` is listed in your `.gitignore` file.
+| Component | Description | Benefit |
+|-----------|-------------|---------|
+| **AIPW Estimator** | Augmented Inverse Propensity Weighting | Doubly-robust causal estimates |
+| **Cross-Fitting** | K-fold validation during training | Prevents overfitting & reduces bias |
+| **ATE** | Average Treatment Effect | Campaign-wide impact measurement |
+| **CATE** | Conditional Average Treatment Effect | Segment-specific insights |
 
-#### **Method 2: Directly in the Code (Quick Setup)**
+---
 
-For a faster setup, you can add the token directly into the backend script.
+## 👥 Who Benefits?
 
-1.  Open the file: `v1/backend/causal_impact.py`.
-2.  Navigate to approximately **line 74** and replace the default token string with your own:
-    ```python
-    # Find this line
-    hf_token = os.environ.get("HF_TOKEN", "<your_token_here")
+<div align="center">
 
-    # Replace the default token with your own, like this:
-    hf_token = os.environ.get("HF_TOKEN", "your_actual_hugging_face_token")
-    ```
+| 🎯 Program Managers | 🔬 Data Scientists | 🏛️ Health Officials |
+|:---:|:---:|:---:|
+| Use ROI insights to justify budgets and optimize campaigns | Build and validate the analytical engine with statistical rigor | Require defensible impact summaries for policy decisions |
+| **Decision-makers** | **Technical experts** | **Stakeholders & funders** |
 
-### Installation & Execution
+</div>
 
-1.  **Clone the repo**
+---
 
-    ```sh
-    git clone https://github.com/MOHAMEDAHSAN/CampaignIQ.git
-    cd CampaignIQ
-    ```
+## 🚀 Quick Start
 
-2.  **Install and run the frontend** (in a new terminal window)
+### **Prerequisites**
 
-    ```sh
-    cd v1
-    npm install
-    npm run dev
-    ```
+```bash
+# Required software
+✓ Node.js & npm
+✓ Python 3.x & pip
+```
 
-3.  **Install dependencies and run the backend** (in another terminal window)
+### **⚙️ Configuration: Hugging Face Token** 🔑
 
-    ```sh
-    # Make sure you are in the root CampaignIQ directory
-    pip install -r requirements.txt  # You may need to create a requirements.txt file
-    python v1/backend/app.py
-    ```
+The project requires a Hugging Face token for ML model access. Choose your preferred method:
 
------
-### Sample Dataset
+<details>
+<summary><b>📌 Method 1: Environment File (Recommended)</b></summary>
 
+**Most secure - prevents token exposure in version control**
 
-[`campaign_dataset.csv`](https://github.com/MOHAMEDAHSAN/CampaignIQ/blob/main/v1/backend/campaign_dataset.csv) file located in the `v1/backend/` directory. 
-## License
+1. Create `.env` in the project root (`v1/.env`):
+   ```bash
+   HF_TOKEN="your_hugging_face_token_here"
+   ```
 
-Distributed under the **Apache License**. See `LICENSE` for more information.
+2. Verify `.env` is in `.gitignore`
 
+</details>
 
+<details>
+<summary><b>⚡ Method 2: Direct Code Entry (Quick Setup)</b></summary>
 
+**Faster setup for development**
 
+1. Open `v1/backend/causal_impact.py`
+2. Navigate to line ~74 and update:
+   ```python
+   hf_token = os.environ.get("HF_TOKEN", "your_actual_token_here")
+   ```
+
+</details>
+
+---
+
+### **📦 Installation**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/MOHAMEDAHSAN/CampaignIQ.git
+cd CampaignIQ
+
+# 2. Frontend setup (Terminal 1)
+cd v1
+npm install
+npm run dev
+
+# 3. Backend setup (Terminal 2)
+pip install -r requirements.txt
+python v1/backend/app.py
+```
+
+---
+
+## 📊 Sample Data
+
+A comprehensive sample dataset is included for testing and demonstration:
+
+📁 **Location**: [`v1/backend/campaign_dataset.csv`](https://github.com/MOHAMEDAHSAN/CampaignIQ/blob/main/v1/backend/campaign_dataset.csv)
+
+---
+
+## 📄 License
+
+<div align="center">
+
+**Distributed under the Apache License 2.0**
+
+See [`LICENSE`](LICENSE) for complete terms and conditions.
+
+---
+
+### ⭐ Star this repo if CampaignIQ helps your organization!
+
+**Built with ❤️ for public health impact measurement**
+
+</div>
