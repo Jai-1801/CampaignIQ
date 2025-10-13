@@ -25,11 +25,11 @@ CampaignIQ is a state-of-the-art analytical solution that leverages causal infer
 
 <div align="center">
 
-| Campaign Analytics Dashboard | Causal Impact Visualization |
+| Campaign Analytics Dashboard | Metrics |
 |:---:|:---:|
 | ![Output 1](./v1/images/output_1.jpg) | ![Output 3](./v1/images/output_3.jpg) |
 
-| Segment Analysis | Metrics |
+| Segment Analysis | Causal Impact Visualization |
 |:---:|:---:|
 | ![Output 4](./v1/images/output_4.jpg) | ![Output 2](./v1/images/output_2.jpg) |
 
@@ -198,6 +198,7 @@ See [`LICENSE`](LICENSE) for complete terms and conditions.
 **Built with ❤️ for public health impact measurement**
 
 </div>
+
 
 
 
