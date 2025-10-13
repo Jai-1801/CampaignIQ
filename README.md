@@ -86,6 +86,21 @@ graph LR
     I --> J[💡 Strategic Decisions]
 ```
 
+---
+
+### IBM Z Community Cloud Use Case
+
+The IBM Z Community Cloud provided the core infrastructure for deploying CampaignIQ, serving as a secure, reliable, and enterprise-grade platform for our full-stack data science application.
+
+| Component/Feature | Role in CampaignIQ Project | Benefit & Advantage |
+| :--- | :--- | :--- |
+| **LinuxONE VM (s390x)** | Core infrastructure for hosting the entire application stack (Nginx, Flask, React). | Provided an **enterprise-grade, secure, and reliable platform**, ideal for handling sensitive data analysis and running AI workloads. |
+| **Ubuntu 22.04 OS** | The operating system for installing all software (Python, Node.js, Nginx). | Offered a **familiar and standard Linux environment**, making development and deployment straightforward on the Z architecture. |
+| **Public Networking** | Made the web application globally accessible via a public IP and secured the server using the `ufw` firewall. | Demonstrated **standard cloud networking capabilities**, allowing the project to be deployed and used like any modern web application. |
+| **Production Stack** | Hosted a complete production-ready stack: **Nginx** as a reverse proxy, **Flask** for the backend API, and **PM2** as a process manager. | Showcased that the platform can run a **modern, robust software stack**, proving its versatility for data-driven web solutions. |
+
+---
+
 ### **Core Methodology**
 
 | Component | Description | Benefit |
@@ -198,6 +213,7 @@ See [`LICENSE`](LICENSE) for complete terms and conditions.
 **Built with ❤️ for public health impact measurement**
 
 </div>
+
 
 
 
