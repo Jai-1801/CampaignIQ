@@ -159,15 +159,18 @@ The project requires a Hugging Face token for ML model access. Choose your prefe
 # 1. Clone the repository
 git clone https://github.com/MOHAMEDAHSAN/CampaignIQ.git
 cd CampaignIQ
+```
 
+```bash
 # 2. Frontend setup (Terminal 1)
 cd v1
 npm install
 npm run dev
-
+```
+```bash
 # 3. Backend setup (Terminal 2)
 pip install -r requirements.txt
-python v1/backend/app.py
+python backend/app.py
 ```
 
 ---
@@ -195,3 +198,4 @@ See [`LICENSE`](LICENSE) for complete terms and conditions.
 **Built with ❤️ for public health impact measurement**
 
 </div>
+
