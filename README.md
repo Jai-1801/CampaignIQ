@@ -15,7 +15,7 @@
 
 ### *Move beyond correlation. Measure true causal impact.*
 
-CampaignIQ is a state-of-the-art analytical solution that leverages causal inference to provide health organizations with precise, unbiased measures of campaign ROI and actionable insights for strategic resource allocation.
+CampaignIQ is a state-of-the-art analytical solution that leverages causal inference to provide health organizations with precise, unbiased measures of campaign metrics and actionable insights for strategic resource allocation.
 
 </div>
 
@@ -213,6 +213,7 @@ See [`LICENSE`](LICENSE) for complete terms and conditions.
 **Built with ❤️ for public health impact measurement**
 
 </div>
+
 
 
 
