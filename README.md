@@ -9,7 +9,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-Latest-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-### [🌐 Visit Full-Stack Prototype - http://148.100.109.34/](http://148.100.109.34/) • Deployed on IBM LinuxONE Community Cloud
+### [🌐 Visit Full-Stack Prototype - http://148.100.109.34/](http://148.100.109.34/) (Deprecated)• Deployed on IBM LinuxONE Community Cloud
 ### [Download Test Dataset Here](https://github.com/MOHAMEDAHSAN/CampaignIQ/blob/main/v1/backend/campaign_dataset.csv)
 ---
 
