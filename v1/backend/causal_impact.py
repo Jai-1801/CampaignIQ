@@ -31,7 +31,7 @@ def generate_llm_report(
     try:
         # --- Hugging Face API Configuration ---
         # Load Hugging Face token securely from an environment variable.
-        hf_token = os.environ.get("HF_TOKEN","REDACTED_HF_TOKEN")
+        hf_token = os.environ.get("HF_TOKEN")
         if not hf_token:
             print("\n" + "="*60)
             print("     WARNING: HF_TOKEN environment variable not found.")
